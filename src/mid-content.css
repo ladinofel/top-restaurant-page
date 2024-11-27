@@ -1,0 +1,11 @@
+img {
+  margin: 4%;
+  height: 60vh;
+  width: auto;
+}
+
+.mid-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(130, 141, 141);
+}

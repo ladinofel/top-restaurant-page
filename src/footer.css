@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'mainFont';
+	src: url(./fonts/comfortaFont.ttf);
+	font-style:normal;
+}
+
+.handle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  height: 2vh;
+}
+
+.git-logo {
+  height: 5vh;
+  width: auto;
+  margin: 0;
+}
+
+#handle {
+  font-family: "mainFont";
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(162, 159, 156);
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 98vh;
+}

@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'mainFont';
+	src: url(./fonts/comfortaFont.ttf);
+	font-style:normal;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	font-family: 'mainFont';
+	align-items: center;
+	
+}
+
+.header-link {
+	display: block;
+	cursor: pointer;
+	transition: transform 0.4s ease;
+	font-weight:bolder;
+	color: rgb(53, 52, 51);
+	
+}
+
+.header-link:hover {
+	transform: translateY(5px);
+}
+
+.header-link {
+	font-size:x-large;
+}
