@@ -14,10 +14,16 @@ const menuGenerator = () => {
   menuTitle.textContent = 'COFFEE MENU';
   menuHeader.append(menuTitle);
 
-  const menuInfo = document.createElement('div');
-  menuInfo.classList.add('menu-info');
+  const columnContainer = document.createElement('div');
+  columnContainer.classList.add('column-container');
 
-  const menuItems = [
+  const menuColumnA = document.createElement('div');
+  menuColumnA.classList.add('menu-column');
+
+  const menuColumnB = document.createElement('div');
+  menuColumnB.classList.add('menu-column');
+
+  const menuItemsA = [
     {name: 'Americano', price: '$4.50'},
     {name: 'Expresso', price: '$3.30'},
     {name: 'Capuccino', price: '$4.50'},
@@ -25,17 +31,33 @@ const menuGenerator = () => {
     {name: 'Macchiato', price: '$4.80'},
     {name: 'Black Coffee', price: '$3.65'},
   ];
+
+  const menuItemsB = [
+    {name: 'Chocolate Croissant', price: '$4.80'},
+    {name: 'Almond & Oatmeal Cookie', price: '$3.70'},
+    {name: 'Egg Bagel', price: '$5.20'},
+    {name: 'Lemon Cheescake', price: '$4.10'},
+    {name: 'Caramel Pretzel', price: "$ 2.80"},
+    {name: 'Chocolate Cake', price: '$4.50'},
+  ];
   
-  menuItems.forEach(item => {
+  menuItemsA.forEach(item => {
     const productContainer = document.createElement('div');
     productContainer.classList.add('product-item');
     productContainer.textContent = `${item.name} ${item.price}`;
-    menuInfo.append(productContainer);
+    menuColumnA.append(productContainer);
+  })
+
+  menuItemsB.forEach(item => {
+    const productContainer = document.createElement('div');
+    productContainer.classList.add('product-item');
+    productContainer.textContent = `${item.name} ${item.price}`;
+    menuColumnB.append(productContainer);
   })
   
-  menuContainer.append(menuHeader, menuInfo);
+  columnContainer.append(menuColumnA, menuColumnB);
+  menuContainer.append(menuHeader, columnContainer);
   midContainer.append(menuContainer);
-
 };
 
 export {menuGenerator};

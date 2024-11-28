@@ -1,5 +1,6 @@
 import "./header.css";
 import { menuGenerator } from "./menu";
+import { midContentGenerator } from "./mid-content";
 
 const headerGenerator = () => {
   const header = document.createElement('div');
@@ -11,6 +12,10 @@ const headerGenerator = () => {
 	homeTitle.classList.add('header-link');
 	homeTitle.textContent = 'Home';
 	home.append(homeTitle);
+
+	home.addEventListener('click', () => {
+		location.reload();
+	});
 
 	const menu = document.createElement('div');
 	menu.classList.add('menu');
