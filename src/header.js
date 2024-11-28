@@ -1,4 +1,5 @@
 import "./header.css";
+import { menuGenerator } from "./menu";
 
 const headerGenerator = () => {
   const header = document.createElement('div');
@@ -17,6 +18,10 @@ const headerGenerator = () => {
 	menuTitle.classList.add('header-link');
 	menuTitle.textContent = "Menu";
 	menu.append(menuTitle);
+
+	menu.addEventListener('click', () => {
+		menuGenerator();
+	});
 
 	const contact = document.createElement('div');
 	contact.classList.add('contact');
