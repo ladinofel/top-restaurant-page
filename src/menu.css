@@ -1,12 +1,19 @@
 
+@font-face {
+	font-family: 'mainFont';
+	src: url(./fonts/comfortaFont.ttf);
+	font-style:normal;
+}
 
 .menu-header {
+  font-style: italic;
   display: flex;
   font-size:2.3rem;
   font-weight:lighter;
   justify-content: center;
   
 }
+
 
 .menu-column {
   display: flex;

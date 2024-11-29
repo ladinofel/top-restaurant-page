@@ -13,6 +13,8 @@ const footerGenerator = () => {
   const handle = document.createElement('a');
   handle.id = 'handle';
   handle.textContent = 'Ladinofel';
+  handle.setAttribute('href', 'https://github.com/ladinofel/top-restaurant-page');
+  handle.setAttribute('target', '_blank');
   handleContainer.append(logo, handle);
   footerContainer.append(handleContainer);
 

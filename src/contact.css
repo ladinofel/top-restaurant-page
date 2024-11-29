@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'mainFont';
+	src: url(./fonts/comfortaFont.ttf);
+	font-style:normal;
+}
+
+
+.contact-container {
+  font-family: 'mainFont';
+  text-align: center;
+  font-size:larger;
+  font-weight: 600;
+  margin:22vh 0 22vh 0;
+}

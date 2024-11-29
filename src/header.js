@@ -1,6 +1,6 @@
 import "./header.css";
 import { menuGenerator } from "./menu";
-import { midContentGenerator } from "./mid-content";
+import { contactGenerator } from "./contact";
 
 const headerGenerator = () => {
   const header = document.createElement('div');
@@ -34,6 +34,10 @@ const headerGenerator = () => {
 	contactTitle.classList.add('header-link');
 	contactTitle.textContent = "Contact";
 	contact.append(contactTitle);
+
+	contact.addEventListener('click', () => {
+		contactGenerator();
+	});
 
 	header.append(home, menu, contact);
 
